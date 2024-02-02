@@ -168,7 +168,9 @@ I have give explantions for the give functions thanks to the man page and AI..
         The function returns 0 on success and -1 on failure.
 
 💥 fork():
-        The fork function in C is part of the <unistd.h> header and is used to create a new process, called a child process, which runs concurrently with the process that makes the fork() call (parent process). The child process is an exact copy of the parent process except for the following:
+
+The fork function in C is part of the <unistd.h> header and is used to create a new process, called a child process, which runs concurrently with the process that makes the fork() call (parent process). The child process is an exact copy of the parent process except for the following:
+
             The child process has a unique process ID.
             The child process has a different parent process ID (the process ID of the parent process).
             The child process has its own copy of the parent's file descriptors. These file descriptors refer to the same open file descriptions as the corresponding file descriptors in the parent.
@@ -197,6 +199,7 @@ I have give explantions for the give functions thanks to the man page and AI..
             The child process does not inherit process-associated thread cancellation enabled states from the parent.
             The child process does not inherit process-associated thread cancellation pending states from
         pid_t fork(void);
+        
         The function returns the process ID of the child process to the parent process, and 0 to the child process. If there is an error, the function returns -1.
 
 💥 wait():
