@@ -2,6 +2,9 @@
 This is the implementation of shell. 42 Abu Dhabi projects
 ⭐ Implement a shell..
 ## Things to learn for this project
+
+🏹 System Programming
+
 🏹 Command Line and how they are used:
 
 The command line is an interface where users can type and execute commands to interact with the computer.
