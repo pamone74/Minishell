@@ -41,6 +41,7 @@ unset: Unsets an environment variable.
 env: Displays the environment variables.
 exit: Exits the shell or script.
 
+
 🏹 File descriptors:
 
 File descriptors are integer values associated with open files in a Unix-like operating system.
