@@ -2,21 +2,56 @@
 This is the implementation of shell. 42 Abu Dhabi projects
 ⭐ Implement a shell..
 ## Things to learn for this project
-🏹 Command Line and how they are used.
-🏹 Environment variables and local variables
-🏹 Pipe
-🏹 File permissions
-🏹 signals
-🏹 the following builtins:
-    echo with option -n
-    cd with only a relative or absolute path
-    pwd with no options
-    export with no options
-    unset with no options
-    env with no options or arguments
-    exit with no options
-🏹 File descriptors
-🏹 synchonization between processes.
+🏹 Command Line and how they are used:
+
+The command line is an interface where users can type and execute commands to interact with the computer.
+Users can run programs, navigate file systems, manage processes, and perform various tasks using the command line.
+Commands are entered in a terminal or console, and they can have options and arguments.
+
+🏹 Environment variables and local variables:
+
+Environment variables are global variables that are accessible by all processes running on a system.
+Local variables are specific to a particular shell session or script.
+Examples of environment variables include PATH, HOME, and USER.
+
+🏹 Pipe:
+
+The pipe (|) is used to combine the output of one command as the input to another.
+It allows for the creation of command pipelines, where the output of one command becomes the input for the next.
+
+🏹 File permissions:
+
+File permissions control access to files and directories in Unix-like operating systems.
+Permissions include read (r), write (w), and execute (x) for the owner, group, and others.
+chmod command is used to change file permissions.
+
+🏹 Signals:
+
+Signals are software interrupts that are sent to a process to notify it to perform some action.
+Examples include SIGINT (interrupt), SIGTERM (terminate), and SIGKILL (forceful termination).
+kill command is often used to send signals to processes.
+
+🏹 Builtins:
+
+echo -n: Prints text to the console without adding a newline at the end.
+cd: Changes the current working directory.
+pwd: Prints the current working directory.
+export: Sets an environment variable.
+unset: Unsets an environment variable.
+env: Displays the environment variables.
+exit: Exits the shell or script.
+
+🏹 File descriptors:
+
+File descriptors are integer values associated with open files in a Unix-like operating system.
+Standard file descriptors are 0 (stdin), 1 (stdout), and 2 (stderr).
+Input/output redirection and pipes manipulate file descriptors.
+
+🏹 Synchronization between processes:
+
+Synchronization mechanisms, such as semaphores, mutexes, and condition variables, are used to coordinate and control the execution of multiple processes.
+These mechanisms prevent race conditions and ensure proper communication between processes.
+
 💥 First thing to do is to understand the projects goals and requirements, learn and practice the allowed functions and in the process you will 
 develop ideas that will later on help you to develop a algorithm that will work for you. 
 
