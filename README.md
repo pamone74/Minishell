@@ -34,11 +34,17 @@ kill command is often used to send signals to processes.
 🏹 Builtins:
 
 echo -n: Prints text to the console without adding a newline at the end.
+
 cd: Changes the current working directory.
+
 pwd: Prints the current working directory.
+
 export: Sets an environment variable.
+
 unset: Unsets an environment variable.
+
 env: Displays the environment variables.
+
 exit: Exits the shell or script.
 
 
