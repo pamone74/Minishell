@@ -1,0 +1,3 @@
+/*
+    This function stores all the commanda that are available to the user.
+*/
