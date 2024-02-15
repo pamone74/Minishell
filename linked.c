@@ -83,3 +83,40 @@ int ft_check_external(char *str)
         // ft_ps(str);
     // else if(!strcmp(str[0], "bg"))
 // }
+
+void ft_stack_add(t_cmd **head, char c)
+{//printf("%d", c);
+
+    t_cmd *Node = (t_cmd *)malloc(sizeof(t_cmd) + 1);
+    if(!Node)
+        return ;
+
+    Node->data = c;
+    Node->next = NULL;
+    *(*head) = *Node;
+   
+}
+void ft_append(t_cmd *head, char c)
+{
+    t_cmd *Node = (t_cmd *)malloc(sizeof(t_cmd) + 1);
+    if(!Node)
+        return;
+    if(head == NULL)
+    {
+        ft_stack_add(&head, c);
+        return ;
+    }
+    else
+    {
+        Node->data = c;
+        Node->next = NULL;
+        head->next = Node;
+    }
+    
+    
+    
+    
+    
+
+}
+

@@ -11,11 +11,20 @@
 #include <fcntl.h>
 #include <sys/wait.h>
 
+typedef struct s_char
+{
+    int double_quote; // ""
+    int redirect; //<<
+    int inp; // <
+    int outp; // >
+    int single_quote; // ' '
+} t_char;
+
 typedef struct s_cmd
 {
-    char *cmd;
-    char **args;
-    int argc;
+    int data;
+    t_char *flag;
+    struct s_cmd * next;
 } t_cmd;
 
 typedef struct test{
