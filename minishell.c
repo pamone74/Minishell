@@ -68,8 +68,8 @@ int main(void)
     str = malloc(sizeof(char *) * strlen(line) + 1);
     while(1)
     {
-            if(!ft_white_spaces(line) && ft_strlen(str[0]) != 0)
-                str = ft_split(line);
+            // if(!ft_white_spaces(line) && ft_strlen(str[0]) != 0)
+            str = ft_split(line);
             pid = fork();
             if(pid == 0)
             {
