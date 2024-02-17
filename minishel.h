@@ -52,4 +52,7 @@ int ft_check_b(char *str);
 void    ft_cd(char **str);
 void    ft_pwd(void);
 
+
+// new function 
+int ft_check_quote(char **string, t_char *hold);
 #endif

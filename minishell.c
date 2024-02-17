@@ -61,15 +61,21 @@ int ft_white_spaces(char *str)
 }
 int main(void)
 {
+    t_char *cha = malloc(sizeof(t_char));
     char *line;
     int pid;
     line = readline("minishell $ ");
     char **str;
     str = malloc(sizeof(char *) * strlen(line) + 1);
+    (void)cha;
     while(1)
     {
             // if(!ft_white_spaces(line) && ft_strlen(str[0]) != 0)
             str = ft_split(line);
+            // if(ft_check_quote(str, cha) && cha->double_quote%2 == 0)
+            //     return (printf("found it\n"), 0);
+            // else
+            //     return (printf("There was only %d quotes\n", cha->double_quote), 0);;
             pid = fork();
             if(pid == 0)
             {

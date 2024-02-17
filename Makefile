@@ -2,7 +2,7 @@ NAME = minishell
 CC	 = cc
 FLAG = -Wall -Wextra -Werror
 
-SRC = linked.c minishell.c string_utils.c command_1.c
+SRC = linked.c minishell.c string_utils.c command_1.c ft_parse.c
 OBJ_SRC = $(SRC.c=.o)
 
 all: $(NAME)
