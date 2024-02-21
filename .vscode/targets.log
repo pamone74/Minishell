@@ -6,22 +6,20 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Feb 15 05:17:48 2024
+# Make data base, printed on Wed Feb 21 18:29:55 2024
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-RUBY_VERSION = ruby-3.2.2
+RUBY_VERSION = ruby-3.2.3
 # automatic
 ?F = $(notdir $?)
 # default
 .SHELLFLAGS := -c
 # environment
 VSCODE_AGENT_FOLDER = /home/codespace/.vscode-remote
-# makefile (from 'Makefile', line 5)
-SRC = linked.c minishell.c string_utils.c command_1.c
 # environment
 NODE_ROOT = /home/codespace/nvm
 # environment
@@ -44,8 +42,6 @@ CURDIR := /workspaces/Minishell
 DOCKER_BUILDKIT = 1
 # environment
 PYTHON_ROOT = /home/codespace/.python
-# makefile (from 'Makefile', line 6)
-OBJ_SRC = $(SRC.c=.o)
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","osLocale":"en","availableLanguages":{}}
 # environment
@@ -61,31 +57,33 @@ RUBY_HOME = /usr/local/rvm/rubies/default
 # environment
 MAVEN_HOME = /usr/local/sdkman/candidates/maven/current
 # environment
-GITHUB_TOKEN = ghu_hMJMCjbbGtm03N4LDBeQIqFzWgVJkN1Pid51
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+GITHUB_TOKEN = ghu_tGLmwA3a7Smc15WXeAbwqm8rSoLacr3aZU43
+# makefile
+MAKEFILE_LIST := 
 # environment
 ENABLE_DYNAMIC_INSTALL = true
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
+DOTNET_USE_POLLING_FILE_WATCHER = true
+# environment
 CONDA_DIR = /opt/conda
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /vscode/bin/linux-x64/660393deaaa6d1996740ff4880f1bad43768c814
+VSCODE_CWD = /vscode/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda
 # environment
 NVS_ROOT = /usr/local/nvs
 # environment
 DOTNET_SKIP_FIRST_TIME_EXPERIENCE = 1
 # environment
-PATH = /vscode/bin/linux-x64/660393deaaa6d1996740ff4880f1bad43768c814/bin/remote-cli:/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/dotnet/current:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/rvm/bin
+PATH = /vscode/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin
 # environment
 NVS_OS = linux
 # environment
 DYNAMIC_INSTALL_ROOT_DIR = /opt
 # environment
-CLOUDENV_ENVIRONMENT_ID = 59be78f6-4502-4d18-a0a1-fd98c036f7fe
+CLOUDENV_ENVIRONMENT_ID = 74992d92-15d2-4405-b2cb-2c9a53481426
 # environment
 rvm_stored_umask = 0022
 # environment
@@ -111,13 +109,15 @@ NUGET_XMLDOC_MODE = skip
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-e031f7a7-ec68-41d8-979c-bc3a5c95fa46.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-91ac6ab1-c610-4938-af70-9184b9c0838a.sock
+# environment
+DOTNET_RUNNING_IN_CONTAINER = true
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
 CODESPACES = true
 # environment
-CODESPACE_NAME = reimagined-capybara-v6vgrgpggj6qcx9pw
+CODESPACE_NAME = vigilant-space-carnival-r4gr6r7rrjrxh5wj
 # environment
 LS_COLORS = 
 # automatic
@@ -137,11 +137,11 @@ rvm_bin_path = /usr/local/rvm/bin
 # environment
 ORYX_SDK_STORAGE_BASE_URL = https://oryx-cdn.microsoft.io
 # environment
-DOTNET_ROOT = /usr/local/dotnet/current
+DOTNET_ROOT = /usr/share/dotnet
 # default
 .LOADED := 
 # environment
-GEM_HOME = /usr/local/rvm/gems/ruby-3.2.2
+GEM_HOME = /usr/local/rvm/gems/ruby-3.2.3
 # environment
 RVM_PATH = /usr/local/rvm
 # environment
@@ -169,13 +169,13 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-HOSTNAME = codespaces-f3e552
+HOSTNAME = codespaces-87720f
 # environment
 ORYX_ENV_TYPE = vsonline-present
 # environment
 MAKELEVEL := 0
 # environment
-GEM_PATH = /usr/local/rvm/gems/ruby-3.2.2:/usr/local/rvm/gems/ruby-3.2.2@global
+GEM_PATH = /usr/local/rvm/gems/ruby-3.2.3:/usr/local/rvm/gems/ruby-3.2.3@global
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
@@ -183,33 +183,29 @@ HUGO_ROOT = /home/codespace/.hugo
 # default
 MAKECMDGOALS := all
 # environment
-IRBRC = /usr/local/rvm/rubies/ruby-3.2.2/.irbrc
+IRBRC = /usr/local/rvm/rubies/ruby-3.2.3/.irbrc
 # environment
 SHLVL = 1
 # environment
 RUBY_ROOT = /home/codespace/.ruby
 # environment
 MAVEN_ROOT = /home/codespace/.maven
-# makefile (from 'Makefile', line 2)
-CC = cc
 # environment
 JAVA_HOME = /usr/local/sdkman/candidates/java/current
 # default
 MAKE_VERSION := 4.2.1
 # environment
-GITHUB_CODESPACE_TOKEN = BBQ6U57G65XRKRTMNLNARP3FZZDRZANCNFSM4AGNIIYQ
+GITHUB_CODESPACE_TOKEN = BBQ6U55XHXF23VO7XS2GKMTF23U3ZANCNFSM4AGR3NCQ
 # environment
 USER = codespace
 # environment
 NVS_USE_XZ = 1
 # makefile
-.DEFAULT_GOAL := all
+.DEFAULT_GOAL := 
 # environment
 SHELL_LOGGED_IN = true
 # environment
 GOROOT = /usr/local/go
-# makefile (from 'Makefile', line 1)
-NAME = minishell
 # environment
 rvm_version = 1.29.12 (latest)
 # automatic
@@ -234,20 +230,20 @@ NVM_DIR = /usr/local/share/nvm
 PYTHON_PATH = /usr/local/python/current
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
 # makefile
 SHELL = /bin/sh
 # environment
 rvm_user_install_flag = 0
 # environment
-BROWSER = /vscode/bin/linux-x64/660393deaaa6d1996740ff4880f1bad43768c814/bin/helpers/browser.sh
+BROWSER = /vscode/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh
 # environment
 PHP_ROOT = /home/codespace/.php
 # environment
 NVS_HOME = /usr/local/nvs
 # environment
 VSCODE_HANDLES_SIGPIPE = true
-# makefile (from 'Makefile', line 3)
-FLAG = -Wall -Wextra -Werror
 # environment
 DEBIAN_FLAVOR = focal-scm
 # environment
@@ -289,59 +285,47 @@ LANG = C
 # environment
 ContainerVersion = 13
 # environment
-MY_RUBY_HOME = /usr/local/rvm/rubies/ruby-3.2.2
+MY_RUBY_HOME = /usr/local/rvm/rubies/ruby-3.2.3
 # variable set hash-table stats:
-# Load=140/1024=14%, Rehash=0, Collisions=14/169=8%
+# Load=138/1024=13%, Rehash=0, Collisions=13/160=8%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
- 
 
 # Directories
 
-# . (device 1795, inode 1441802): 16 files, no impossibilities.
+# . (device 1797, inode 1441875): 10 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
-%.o: %.c
-#  recipe to execute (from 'Makefile', line 12):
-	cc -Wall -Wextra -Werror -c $< -o $@
-
-# 1 implicit rules, 0 (0.0%) terminal.
+# No implicit rules.
 
 # Files
 
-all: minishell
+# Not a target:
+all:
 #  Command line target.
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2024-02-20 13:32:50.045973876
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2024-02-09 16:14:19.386404287
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Failed to be updated.
 
-minishell:
-#  Implicit rule search has not been done.
-#  Last modified 2024-02-15 03:54:38.165658788
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 10):
-	$(CC) $(FLAG) $(SRC) -o $(NAME) -lreadline
-
-fclean:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 16):
-	rm -rf $(NAME)
+#  Failed to be updated.
 
 # Not a target:
 .DEFAULT:
@@ -349,32 +333,27 @@ fclean:
 #  Modification time never checked.
 #  File has not been updated.
 
-re: clean fclean all
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-clean:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
-	rm -rf $(OBJ_SRC)
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # files hash-table stats:
-# Load=8/1024=1%, Rehash=0, Collisions=0/24=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 215 B / avg = 8 B
-# current buf: size = 8162 B / used = 215 B / count = 26 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 147 B / avg = 8 B
+# current buf: size = 8162 B / used = 147 B / count = 17 / avg = 8 B
 
-# strcache performance: lookups = 41 / hit rate = 36%
+# strcache performance: lookups = 21 / hit rate = 19%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=1/41=2%
-# Finished Make data base on Thu Feb 15 05:17:48 2024
+# Load=17/8192=0%, Rehash=0, Collisions=1/21=5%
+# Finished Make data base on Wed Feb 21 18:29:55 2024
 
  

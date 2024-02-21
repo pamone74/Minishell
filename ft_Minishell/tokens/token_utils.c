@@ -6,7 +6,7 @@
 /*   By: pamone <pamone@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 14:12:43 by pamone            #+#    #+#             */
-/*   Updated: 2024/02/20 14:27:34 by pamone           ###   ########.fr       */
+/*   Updated: 2024/02/20 15:58:11 by pamone           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,4 +66,18 @@ void	ft_append_token(t_token **head, t_token *new_token)
 		token = token->next;
 	token->next = new_token;
 	new_token->prev = token;
+}
+void	ft_free_token(t_token **tokens)
+{
+	t_token *node;
+	t_token *next;
+	node = *tokens;
+	while(node)
+	{
+		free(node->value);
+		next = node->next;
+		free(node);
+		node = next;
+	}
+	*tokens = NULL;
 }
