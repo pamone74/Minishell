@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_err.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pamone <pamone@student.42abudhabi.ae>      +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 19:07:14 by pamone            #+#    #+#             */
-/*   Updated: 2024/02/21 19:24:46 by pamone           ###   ########.fr       */
+/*   Updated: 2024/02/22 05:03:09 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "parsing.h"
 
-void    ft_set_parse_err(t_parse_error *err)
+void    ft_set_parse_err(t_err_type err)
 {
     //g.minishell.parse_err.type = err;
 }

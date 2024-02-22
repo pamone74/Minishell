@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parser_utils.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pamone <pamone@student.42abudhabi.ae>      +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 19:32:34 by pamone            #+#    #+#             */
-/*   Updated: 2024/02/21 20:04:28 by pamone           ###   ########.fr       */
+/*   Updated: 2024/02/22 05:23:33 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,39 +46,39 @@ bool    ft_get_io_list(t_io **io_list)
             return (ft_set_parse_err(SYNTAX), false);
         if (g_minishell.curr_token->type != IDENTIFIER)
             return (ft_set_parse_err(SYNTAX), false);
-        node_io = ft_new_io_node(g_minishell.curr_token->value);
+        node_io = ft_new_io(re_dir_type, g_minishell.curr_token->value);
         if(!node_io)
             return (ft_set_parse_err(MEM), false); 
-        ft_append_io(io_list, node_io);
+        ft_append_io_node(io_list, node_io);
         ft_get_next_token();  
     }
     
 }
 
-bool    ft_get_cmd(t_node **cmd)
-{
-    t_node  *node_cmd;
-    t_io    *io_list;
+// bool    ft_get_cmd(t_node **cmd)
+// {
+//     t_node  *node_cmd;
+//     t_io    *io_list;
 
-    if (g_minishell.parse_err.type)
-        return (false);
-    if (!g_minishell.curr_token)
-        return (ft_set_parse_err(SYNTAX), false);
-    if (g_minishell.curr_token->type != IDENTIFIER)
-        return (ft_set_parse_err(SYNTAX), false);
-    node_cmd = ft_new_node_cmd(g_minishell.curr_token->value);
-    if(!node_cmd)
-        return (ft_set_parse_err(MEM), false);
-    ft_get_next_token();
-    if (g_minishell.curr_token && g_minishell.curr_token->type == REDIR)
-    {
-        if (!ft_get_io_list(&io_list))
-            return (false);
-        node_cmd->io_list = io_list;
-    }
-    *cmd = node_cmd;
-    return (true);
-}
+//     if (g_minishell.parse_err.type)
+//         return (false);
+//     if (!g_minishell.curr_token)
+//         return (ft_set_parse_err(SYNTAX), false);
+//     if (g_minishell.curr_token->type != IDENTIFIER)
+//         return (ft_set_parse_err(SYNTAX), false);
+//     node_cmd = ft_new_node_cmd(g_minishell.curr_token->value);
+//     if(!node_cmd)
+//         return (ft_set_parse_err(MEM), false);
+//     ft_get_next_token();
+//     if (g_minishell.curr_token && g_minishell.curr_token->type == REDIR)
+//     {
+//         if (!ft_get_io_list(&io_list))
+//             return (false);
+//         node_cmd->io_list = io_list;
+//     }
+//     *cmd = node_cmd;
+//     return (true);
+// }
 bool    ft_join_args(char **args)
 {
     char    *to_free;
@@ -105,20 +105,20 @@ t_node *ft_get_simple_cmd(void)
     
     if(g_minishell.parse_err.type)
         return (NULL);  
-    node_cmd = ft_new_noode(NODE_CMD);
+    node_cmd = ft_new_node(NODE_CMD);
     if(!node_cmd)
         return (ft_set_parse_err(MEM), NULL);
     while (g_minishell.curr_token && (g_minishell.curr_token->type == IDENTIFIER || ft_is_redir(g_minishell.curr_token->type)))
     {
         if(g_minishell.curr_token->type == IDENTIFIER)
         {
-            if (!ft_join_args(&node_cmd->value))
-                return (ft_clear_cmd(&node_cmd), ft_set_parse_err(MEM), NULL);
+            if (!ft_join_args(&node_cmd->args))
+                return (ft_clear_cmd(node_cmd), ft_set_parse_err(MEM), NULL);
         }
-        else if(ft_is_redir(&(node_cmd->type)))
+        else if(ft_is_redir(g_minishell.curr_token->type))
         {
             if (!ft_get_io_list(&node_cmd->io_list))
-                return (free(node_cmd->args), free(node), NULL);
+                return (free(node_cmd->args), free(node_cmd), NULL);
         }
     }
     return (node_cmd);

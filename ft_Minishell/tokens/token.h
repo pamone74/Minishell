@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   token.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pamone <pamone@student.42abudhabi.ae>      +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 18:41:42 by pamone            #+#    #+#             */
-/*   Updated: 2024/02/20 19:18:49 by pamone           ###   ########.fr       */
+/*   Updated: 2024/02/22 05:12:07 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,7 @@ int	ft_append_delimiter(t_token_id id, char **args_line, t_token **token_list);
 // int	ft_strncmp(char *string, char *str2, size_t len);
 int	ft_isspace(char c);
 int ft_skip_spaces(char **line);
+
+// strings.
+char	*ft_strjoin_with(char const *s1, char const *s2, char c);
 #endif
