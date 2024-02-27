@@ -6,7 +6,7 @@
 /*   By: pamone <pamone@student.42abudhabi.ae>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 16:11:13 by pamone            #+#    #+#             */
-/*   Updated: 2024/02/20 19:17:56 by pamone           ###   ########.fr       */
+/*   Updated: 2024/02/24 23:18:04 by pamone           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ int	ft_append_identifier(char **line_ptr, t_token **token_list)
 {
 	char	*temp;
 	char	*value;
-	char	*token;
+	t_token	*token;
 	size_t	i;
 
 	temp = *line_ptr;

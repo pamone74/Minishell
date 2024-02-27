@@ -1,16 +1,6 @@
 #include "minishel.h"
 #include <stdio.h>
 
-// int ft_strlen(char *str)
-// {
-//     int i = 0;
-//     while (*str) {
-//         i++;
-//         str++;
-//     }
-//     return (i);
-// }
-
 int ft_check_quote(char **string, t_char *hold)
 {
     t_char *characters;

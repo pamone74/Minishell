@@ -1,12 +1,5 @@
 #ifndef PARSING
 #define PARSING
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include "/workspaces/Minishell/ft_Minishell/tokens/token.h"
-
 typedef enum e_type
 {
     NODE_PIPE,
@@ -52,10 +45,7 @@ typedef struct s_parse_error
     t_err_type  type;
     char        *msg;
 }   t_parse_error;
-//extern t_minishell g_minishell;
-// the files needs to be included in the main file
 
-// ft_err
 void    ft_set_parse_err(t_err_type err);
 void    ft_handle_parse_err(void);
 
@@ -91,6 +81,7 @@ t_node	*ft_expr(int prec);
 t_node	*ft_term(void);
 t_node	*ft_term(void);
 t_node	*ft_combine(t_token_id op, t_node *left, t_node *right);
+t_node	*ft_parse_all(void);
 //t_node	*ft_combine(t_token_id op, t_node *left, t_node *right);
 
 

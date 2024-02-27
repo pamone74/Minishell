@@ -1,19 +1,13 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 4.2.1
- 
 # Built for x86_64-pc-linux-gnu
- 
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
- 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
- 
 # This is free software: you are free to change and redistribute it.
- 
 # There is NO WARRANTY, to the extent permitted by law.
  
 
- 
-# Make data base, printed on Thu Feb 22 10:52:16 2024
+# Make data base, printed on Tue Feb 27 03:52:49 2024
 
 # Variables
 
@@ -64,7 +58,7 @@ RUBY_HOME = /usr/local/rvm/rubies/default
 # environment
 MAVEN_HOME = /usr/local/sdkman/candidates/maven/current
 # environment
-GITHUB_TOKEN = ghu_LCbwGQMCmCZjMkP54BaPJynSvFwSM21awskj
+GITHUB_TOKEN = ghu_6hkIzCcKeIdwkCKRcfK87v7SbNkZOK1nPm0i
 # makefile
 MAKEFILE_LIST := 
 # environment
@@ -104,7 +98,6 @@ SDKMAN_DIR = /usr/local/sdkman
 # environment
 SDKMAN_CANDIDATES_API = https://api.sdkman.io/2
 # environment
- 
 GOPATH = /go
 # environment
 NVM_BIN = /usr/local/share/nvm/versions/node/v20.11.0/bin
@@ -117,7 +110,7 @@ NUGET_XMLDOC_MODE = skip
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-06f700b0-da15-4a73-b91b-9125096012f9.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-fdb2f596-63ea-4490-9a52-7952523543b4.sock
 # environment
 DOTNET_RUNNING_IN_CONTAINER = true
 # default
@@ -163,7 +156,7 @@ HOME = /home/codespace
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 NVM_CD_FLAGS = 
 # automatic
@@ -178,19 +171,13 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 HOSTNAME = codespaces-87720f
- 
 # environment
- 
 ORYX_ENV_TYPE = vsonline-present
  
 # environment
- 
 MAKELEVEL := 0
- 
 # environment
- 
 GEM_PATH = /usr/local/rvm/gems/ruby-3.2.3:/usr/local/rvm/gems/ruby-3.2.3@global
- 
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
@@ -210,7 +197,7 @@ JAVA_HOME = /usr/local/sdkman/candidates/java/current
 # default
 MAKE_VERSION := 4.2.1
 # environment
-GITHUB_CODESPACE_TOKEN = BBQ6U55U6V6EP5I3HSA755LF27DI7ANCNFSM4AGR3NCQ
+GITHUB_CODESPACE_TOKEN = BBQ6U52JRGZ7VMLTVOZVNO3F3YCSLANCNFSM4AGR3NCQ
 # environment
 USER = codespace
 # environment
@@ -310,9 +297,9 @@ MY_RUBY_HOME = /usr/local/rvm/rubies/ruby-3.2.3
 
 # Directories
 
-# . (device 1795, inode 1441875): 10 files, no impossibilities.
+# . (device 1795, inode 1441875): 12 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -324,9 +311,10 @@ MY_RUBY_HOME = /usr/local/rvm/rubies/ruby-3.2.3
 all:
 #  Command line target.
 #  Implicit rule search has been done.
-#  Last modified 2024-02-20 13:32:50.045973876
+#  Last modified 2024-02-22 12:05:06.845964045
 #  File has been updated.
 #  Successfully updated.
+ 
 
 # Not a target:
 Makefile:
@@ -363,12 +351,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 147 B / avg = 8 B
-# current buf: size = 8162 B / used = 147 B / count = 17 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 19 / storage = 160 B / avg = 8 B
+# current buf: size = 8162 B / used = 160 B / count = 19 / avg = 8 B
 
-# strcache performance: lookups = 21 / hit rate = 19%
+# strcache performance: lookups = 23 / hit rate = 17%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=1/21=5%
-# Finished Make data base on Thu Feb 22 10:52:16 2024
+# Load=19/8192=0%, Rehash=0, Collisions=1/23=4%
+# Finished Make data base on Tue Feb 27 03:52:49 2024
 
  
