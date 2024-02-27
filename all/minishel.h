@@ -11,6 +11,15 @@
 #include <fcntl.h>
 #include <sys/wait.h>
 
+typedef enum e_type{
+    INPUT, // <
+    OUTPUT, // >
+    DOUBLE_QUOTE, // ""
+    SINGLE_QUOTE, // ''
+    PIPE, // |
+    HERE_DOC, // <<
+    APPEND_MODE, // >>  
+}t_type;
 typedef struct s_char
 {
     int double_quote; // ""

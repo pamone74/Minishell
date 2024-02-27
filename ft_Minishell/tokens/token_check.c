@@ -6,7 +6,7 @@
 /*   By: pamone <pamone@student.42abudhabi.ae>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 13:49:47 by codespace         #+#    #+#             */
-/*   Updated: 2024/02/20 19:20:09 by pamone           ###   ########.fr       */
+/*   Updated: 2024/02/24 22:50:20 by pamone           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,13 @@ int	ft_check_case(char **line_ptr, t_token **token_list)
 	else 
 		return (ft_append_delimiter(PIPE, line_ptr, token_list) && 1);
 }
-t_token	*ft_handle_tokens(char *line)
+/*
+explain me:
+1. ft_handle_tokens is called from ft_gen_token
+2. ft_handle_tokens is a function that takes a string as an argument and returns a pointer to a token
+
+*/
+t_token	*(t)ft_handle_tokens(char *line)
 {
 	int			error;
 	t_token		*token_list;
@@ -46,12 +52,12 @@ t_token	*ft_handle_tokens(char *line)
 			return (ft_free_token(&token_list), NULL);
 		if(ft_isspace(*line))
 			ft_skip_spaces(&line);
-		else if(!ft_strncmp(line, "&&", 2) || !ft_strncmp(line, "<<", 2)
-			|| !ft_strncmp(line, ">>", 2) || !ft_strncmp(line, "<", 2)
-			|| !ft_strncmp(line, ">", 2) || !ft_strncmp(line, "(", 2) || !ft_strncmp(line, ")", 2))
-			error = (!ft_check_case(&line, &token_list && 1));
+		else if(!ft_strncmp(line, "&&", 2) || !ft_strncmp(line, "|", 2)
+			|| !ft_strncmp(line, ">", 2) || !ft_strncmp(line, "<", 2)
+			|| !ft_strncmp(line, "(", 2) || !ft_strncmp(line, ")", 2))
+			error = (!ft_check_case(&line, &token_list)&& 1);
 		else 
-			error = ((!ft_append_delimeter(&line, &token_list) && 1));
+			error = ((!ft_append_identifier(&line, &token_list) && 1));
 	}
 	return (token_list);
 }

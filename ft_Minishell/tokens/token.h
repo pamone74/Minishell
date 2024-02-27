@@ -3,22 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   token.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: pamone <pamone@student.42abudhabi.ae>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 18:41:42 by pamone            #+#    #+#             */
-/*   Updated: 2024/02/22 05:12:07 by codespace        ###   ########.fr       */
+/*   Updated: 2024/02/24 22:37:33 by pamone           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef TOKEN
 #define TOKEN
-
-#include <limits.h>
-#include <stdint.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include "/workspaces/Minishell/libft/libft.h"
-typedef enum  e_token_id{
+#define PROMPT "minishell$ "
+typedef enum  e_token_id
+{
     IDENTIFIER,
     INPUT,
     OUTPUT,
@@ -50,4 +46,7 @@ int ft_skip_spaces(char **line);
 
 // strings.
 char	*ft_strjoin_with(char const *s1, char const *s2, char c);
+t_token	*ft_handle_tokens(char *line);
+t_token	*ft_gen_token(void);
+int	ft_append_identifier(char **line_ptr, t_token **token_list);
 #endif

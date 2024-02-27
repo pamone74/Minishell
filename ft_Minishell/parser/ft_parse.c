@@ -22,7 +22,9 @@ t_node	*ft_term(void)
 	else
 		return(ft_get_simple_cmd());
 }
-t_node	*ft_expr(int prec)
+t_node	*
+
+ft_expr(int prec)
 {
 	t_node	*left;
 	t_node	*right;
