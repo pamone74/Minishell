@@ -1,3 +1,27 @@
+
+**Tokenizing Algorithm:**
+
+1. **Input:** Receive the command string as input.
+2. **Initialize:** Set up variables to keep track of the current position in the input string, as well as pointers to the head and tail of the token linked list.
+3. **Tokenization Loop:**
+   - Iterate through each character in the input string.
+   - Identify token boundaries by considering whitespace, quotes (`"` and `'`), and special characters like pipes (`|`), redirection symbols (`<`, `>`, `>>`), and semicolons (`;`).
+   - Create new token structures for each identified token substring and append them to the token linked list.
+4. **Return Tokens:** Output the linked list of tokens for further processing.
+
+**Parsing Algorithm:**
+
+1. **Input:** Receive the linked list of tokens generated from the tokenization step.
+2. **Initialize:** Prepare data structures for organizing and representing the parsed command.
+3. **Parsing Loop:**
+   - Iterate through the tokens in the linked list.
+   - Determine the type of each token:
+     - If it represents a command or argument, add it to the current command structure.
+     - If it denotes a pipe (`|`) or semicolon (`;`), create a new command structure and associate the previous tokens with it.
+     - If it signifies a redirection or here-document, appropriately link it with the relevant command.
+4. **Return Command Structures:** Output the array or data structure containing the parsed commands for execution.
+
+These professional-level algorithms systematically break down the input command string into meaningful components, facilitating further processing and execution within a command-line interface or shell environment.
 # Minishell
 This is the implementation of shell. 42 Abu Dhabi projects
 ⭐ Implement a shell..
